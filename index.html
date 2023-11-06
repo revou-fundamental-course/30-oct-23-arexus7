@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="icon" type="image/x-icon" href="1011863.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="/JS/script.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="form">
+        <div class="formInternal">
+          <h1> (BMIC) Body Mass Index Calculator</h1>
+          <br>
+          <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> Berat Badan Ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan. Berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br><b>Yuk, Hitung sekarang di BMIC.</b></p>
+          <br>
+          <br>
+          <form class="input" name="message-form" onsubmit=" return validateForm()">
+            <br>
+            <label for="Gender"><b>Jenis Kelamin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b></label>
+            
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+          <br><br>
+              <label for="Berat"><b>Berat Badan (kg) &nbsp;&nbsp;:</b></label>
+              <input type="number" placeholder="Tolong Masukkan Berat Badan Anda." id="berat" name="berat">
+              <br>
+              <label for="Usia"><b>Usia (tahun)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</b> </label>
+              <input type="number" placeholder="Tolong Masukkan Usia Anda. "  id="usia" name="usia">
+              <br>
+              <label for="Tinggi"><b>Tinggi Badan (cm)&nbsp;:</b></label>
+              <input type="number" placeholder="Tolong Masukkan Tinggi Badan Anda." id="tinggi" name="tinggi">
+              <br><br>
+              <input type="submit" value="Hitung BMI">
+              <input type="button" onclick="reset()" value="Reset">
+              <p id="error-all" class="error"></p>
+          </form>
+          <br>
+          <div class="Keunggulan">
+
+            <p><b>Keunggulan Fitur</b></p>
+            <br>
+            <ol type="1" style="margin-left: 20px;">
+                  <li>Menghitung Berat Badan.</li>
+                  <li>Menentukan Kategori Berat Badan Ideal atau Tidak.</li>
+                  <li>Mempersiapkan Program Penurunan Berat Badan.</li>
+    
+            </ol>
+            <br><br>
+             <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+             <br>
+             <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Masa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/M2.</p>
+         </div>
+          <br><br>
+         <div class="upper-footer">
+            <h2>Download Aplikasi</h2>
+            <br>
+            <a href="https://store.google.com/id/"><img src="Google_Play.png" alt="BLANK" height="50px"  ></a> &nbsp;&nbsp;&nbsp;
+            <a href="https://www.apple.com/store"><img src="apple_store.png" alt="ERROR" height="50px"></a>
+        </div>
+
+        </div>
+      </div>
+     <div><img src="3d-happy-cartoon-doctor-cartoon-doctor-on-transparent-background-generative-ai-png.png" alt="404" height="175px" class="center" ></div>
+      <div class="message">
+        <div class="textbox">
+          <br>
+          <b><p1 id="bmi_text" > Your BMI is :  </p1></b><br>
+          <h1 id="bmi_big_text" style="font-size: 50px;"></h1>
+          <br>
+          <b><p1 id="bmi_desc" >   </p1></b>
+          <br>
+          <b><p1 id="bmi_desc_2" >   </p1></b>
+          <br><br>
+          <div id="something"></div>
+          <br>
+          <b><p1 id="bmi_desc_3" >   </p1></b>
+          <br><br><br>
+          <div id="something2"></div>
+          <br><br>
+          <b><p1 id="bmi_desc_4" >   </p1></b>
+          <br> <br><br>
+          <b><p1 id="bmi_desc_5" >   </p1></b>
+          <br>
+          <br>
+          <div id="something3"></div>
+          <br><br>
+        </div>
+      </div>
+
+      
+      <footer class="footer"><b>&copy; All Rights Reserved Richard Adrian</b></footer>
+
+
+</body>
+</html>
